@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <!-- PARTE NÃO VISÍVEL DA PAGINA, CONFIGURAÇÕES, TÍTULO E OUTRAS INFORMAÇÕES-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <title> Desafio Formulário </title>
+</head>
+
+<body>
+    <!-- CORPO DO SITE, TODO O CONTEUDO VISÍVEL -->
+
+    <div>
+
+        <legend>Cadastro</legend>
+
+
+        <form name="form" action="enviar.php" method="POST" enctype="multipart/form-data">
+            <div>
+                <label class="name">
+                    Nome
+                    <input type="text" name="Nome" autofocus required />
+
+                </label>
+            </div>
+
+            <div>
+                <label class="email">
+                    Email
+                    <input type="email" name="Email" required />
+                </label>
+            </div>
+
+            <div>
+                <label class="age">
+                    Idade
+                    <input type="number" min="12" name="Idade" id="Idade" step="1" required />
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Data de Nascimento
+                    <input type="date" name="Data de Nascimento" required />
+                </label>
+            </div>
+
+            <div>
+                <label>
+
+                    Onde voçê possui conta:
+                </label>
+
+                <label class="media-social">
+                    Instagram
+                    <input type="checkbox" name="Instagram" />
+                </label>
+
+                <label class="media-social">
+                    Facebook
+                    <input type="checkbox" name="Facebook" />
+                </label>
+                <label class="media-social">
+                    Youtube
+                    <input type="checkbox" name="Youtube" />
+                </label>
+            </div>
+
+
+            <div>
+                <label> Sexo :
+
+
+                    <input class="genero" type="radio" id="Masculino" name="genero" /><label>Masculino<br></label>
+                    <input class="genero" type="radio" id="Feminino" name="genero" /><label>Feminino<br>
+                    </label>
+                </label>
+            </div>
+
+
+            <div>
+                <label>
+                    Cor dos Olhos
+                </label>
+                <label>
+                    <input type="color" name="Cor dos Olhos" required />
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Biografia
+
+
+                    <textarea id="Biografia" name="Biografia" required>
+                        </textarea>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Foto de perfil
+                    <input type="file" accept="image/*" name="Foto de perfil" action="">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Telefone
+                    <input type="tel" name="Telefone">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Link do Perfil do Facebook
+                    <input type="url" name="Perfil do Facebook">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Senha
+                    <input type="password" minlength="6" maxlength="8" name=" Senha" required>
+                </label>
+            </div>
+
+
+            <button class="Reset" type="reset" name="Limpar"> Limpar</button>
+            <button class=" Enviar" type="submit" name="Enviar">Enviar</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
